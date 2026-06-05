@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tabs Home — Privacy Policy</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      max-width: 720px;
+      margin: 60px auto;
+      padding: 0 24px 80px;
+      color: #1a1a1a;
+      line-height: 1.7;
+    }
+    h1 { font-size: 28px; margin-bottom: 4px; }
+    h2 { font-size: 18px; margin-top: 40px; }
+    p, li { font-size: 15px; color: #333; }
+    ul { padding-left: 20px; }
+    .updated { font-size: 13px; color: #888; margin-bottom: 40px; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+
+<h1>Tabs Home — Privacy Policy</h1>
+<p class="updated">Last updated: June 5, 2025</p>
+
+<p>
+  Tabs Home is a Chrome extension that replaces your new tab page with a customizable
+  grid of tiles and background settings. This policy explains what data the extension
+  accesses and how it is used.
+</p>
+
+<h2>Data we collect</h2>
+<p>The extension does <strong>not</strong> collect, transmit, or share any personal data
+with the developer or any third party. All data stays on your device and in your
+Chrome sync storage.</p>
+
+<p>The extension stores the following data locally via <code>chrome.storage.sync</code>:</p>
+<ul>
+  <li>URLs, titles, and icons of tiles you add manually</li>
+  <li>Background and layout preferences you configure</li>
+  <li>Widget settings (search bar position, colors)</li>
+</ul>
+
+<p>This data is synced across your own Chrome-signed-in devices by Chrome's built-in
+sync mechanism. The developer has no access to this data.</p>
+
+<h2>Network requests</h2>
+<p>
+  When you add a new tile, the extension may fetch the destination website to automatically
+  retrieve its title and icon (favicon). This request is made directly from your browser
+  to the website you entered — no data passes through any developer-controlled server.
+  The extension requests the <code>optional_host_permissions</code> (<code>https://*/*</code>)
+  permission solely for this purpose.
+</p>
+<p>No analytics, advertising, or tracking scripts are included in the extension.</p>
+
+<h2>Data sharing</h2>
+<p>
+  The extension does not share, sell, rent, or transfer any user data to third parties
+  under any circumstances.
+</p>
+
+<h2>Permissions</h2>
+<ul>
+  <li><strong>storage</strong> — to save your tiles, backgrounds, and settings in Chrome sync storage.</li>
+  <li><strong>optional host permissions (https://*/*)</strong> — to fetch site titles and icons
+      when you manually add a new tile. This permission is only used when you actively add a tile.</li>
+</ul>
+
+<h2>Children's privacy</h2>
+<p>
+  The extension does not knowingly collect any information from children under 13.
+  It contains no age-restricted content.
+</p>
+
+<h2>Changes to this policy</h2>
+<p>
+  If this policy changes, the updated version will be published at the same URL with
+  a new "Last updated" date. Continued use of the extension after a change constitutes
+  acceptance of the updated policy.
+</p>
+
+<h2>Contact</h2>
+<p>
+  If you have questions about this privacy policy, please open an issue on the
+  extension's support page or contact the developer directly via the Chrome Web Store
+  listing.
+</p>
+
+</body>
+</html>
