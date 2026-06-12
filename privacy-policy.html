@@ -24,7 +24,7 @@
 <body>
 
 <h1>Tabs Home — Privacy Policy</h1>
-<p class="updated">Last updated: June 5, 2025</p>
+<p class="updated">Last updated: June 5, 2026</p>
 
 <p>
   Tabs Home is a Chrome extension that replaces your new tab page with a customizable
@@ -52,9 +52,20 @@ sync mechanism. The developer has no access to this data.</p>
   When you add a new tile, the extension may fetch the destination website to automatically
   retrieve its title and icon (favicon). This request is made directly from your browser
   to the website you entered — no data passes through any developer-controlled server.
-  The extension requests the <code>optional_host_permissions</code> (<code>https://*/*</code>)
-  permission solely for this purpose.
 </p>
+
+<h2>Search widgets</h2>
+<p>
+  The extension includes optional search widgets (Google and Yandex). When a search
+  widget is enabled and you type a query into it, the text you type is sent directly
+  from your browser to the corresponding search provider to fetch autocomplete
+  suggestions, and you are taken to that provider's website when you submit the
+  search. These requests go straight to Google or Yandex — no data passes through
+  any developer-controlled server — and are governed by the privacy policy of the
+  respective search provider. If you do not use the search widgets, no such requests
+  are made.
+</p>
+
 <p>No analytics, advertising, or tracking scripts are included in the extension.</p>
 
 <h2>Data sharing</h2>
@@ -67,7 +78,9 @@ sync mechanism. The developer has no access to this data.</p>
 <ul>
   <li><strong>storage</strong> — to save your tiles, backgrounds, and settings in Chrome sync storage.</li>
   <li><strong>optional host permissions (https://*/*)</strong> — to fetch site titles and icons
-      when you manually add a new tile. This permission is only used when you actively add a tile.</li>
+      when you manually add a new tile, and to fetch autocomplete suggestions from your
+      chosen search provider when you type in a search widget. This permission is requested
+      only when you first use one of these features, and is never used in the background.</li>
 </ul>
 
 <h2>Children's privacy</h2>
