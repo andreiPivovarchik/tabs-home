@@ -24,7 +24,7 @@
 <body>
 
 <h1>Tabs Home — Privacy Policy</h1>
-<p class="updated">Last updated: June 5, 2026</p>
+<p class="updated">Last updated: August 23, 2026</p>
 
 <p>
   Tabs Home is a Chrome extension that replaces your new tab page with a customizable
@@ -54,15 +54,15 @@ sync mechanism. The developer has no access to this data.</p>
   to the website you entered — no data passes through any developer-controlled server.
 </p>
 
-<h2>Search widgets</h2>
+<h2>Search box</h2>
 <p>
-  The extension includes optional search widgets (Google and Yandex). When a search
-  widget is enabled and you type a query into it, the text you type is sent directly
-  from your browser to the corresponding search provider to fetch autocomplete
-  suggestions, and you are taken to that provider's website when you submit the
-  search. These requests go straight to Google or Yandex — no data passes through
-  any developer-controlled server — and are governed by the privacy policy of the
-  respective search provider. If you do not use the search widgets, no such requests
+  The extension includes an optional search box on the new tab page. When it is enabled
+  and you submit a query, the query is handed to Chrome through the standard
+  <code>chrome.search</code> API, and Chrome runs it in the search engine you selected
+  in Chrome settings. The extension does not choose a search engine, does not change
+  your search settings, and does not send the query anywhere itself. Nothing you type
+  is stored, logged, or transmitted to any developer-controlled server, and no
+  autocomplete requests are made. If you do not use the search box, no such requests
   are made.
 </p>
 
@@ -77,31 +77,4 @@ sync mechanism. The developer has no access to this data.</p>
 <h2>Permissions</h2>
 <ul>
   <li><strong>storage</strong> — to save your tiles, backgrounds, and settings in Chrome sync storage.</li>
-  <li><strong>optional host permissions (https://*/*)</strong> — to fetch site titles and icons
-      when you manually add a new tile, and to fetch autocomplete suggestions from your
-      chosen search provider when you type in a search widget. This permission is requested
-      only when you first use one of these features, and is never used in the background.</li>
-</ul>
-
-<h2>Children's privacy</h2>
-<p>
-  The extension does not knowingly collect any information from children under 13.
-  It contains no age-restricted content.
-</p>
-
-<h2>Changes to this policy</h2>
-<p>
-  If this policy changes, the updated version will be published at the same URL with
-  a new "Last updated" date. Continued use of the extension after a change constitutes
-  acceptance of the updated policy.
-</p>
-
-<h2>Contact</h2>
-<p>
-  If you have questions about this privacy policy, please open an issue on the
-  extension's support page or contact the developer directly via the Chrome Web Store
-  listing.
-</p>
-
-</body>
-</html>
+  <li><strong>search</strong> — to hand the text you
